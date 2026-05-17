@@ -187,3 +187,80 @@ body {
 .select-cinema {
     min-width: 470px;
 }
+
+.scheme {
+    margin-bottom: 40px;
+    background: rgba(36, 36, 36, 0.18);
+    border-radius: 10px;
+}
+
+.scheme path:not(.ligth) {
+    fill: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.scheme path:not(.ligth):hover {
+    fill: rgba(255, 255, 255, 0.5)
+}
+
+.scheme path.seat-booked,
+.scheme path.seat-booked:hover {
+    fill: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+}
+
+.scheme path.seat-active,
+.scheme path.seat-active:hover {
+    fill: #fe8e05;
+}
+
+.scheme-legend {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 1024px;
+    margin: auto;
+    padding-top: 22px;
+    padding-bottom: 38px;
+}
+
+.scheme-legend svg {
+    margin-right: 15px;
+}
+
+.scheme-legend-label {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.price {
+    margin-top: 62px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-label {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.price-tag {
+    font-size: 52px;
+    line-height: 61px;
+}
+
+.button {
+    background: #fe8e05;
+    border-radius: 5px;
+    padding: 24px 52px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+}
